@@ -1,4 +1,4 @@
-# Gabe's new dotfiles
+# Gabe's new dotfiles | [Codeberg](https://codeberg.org/sykesgabri/dotfiles2) | [Github](https://github.com/sykesgabri/dotfiles2)
 
 This repo contains my most recent set of dotfiles, specifically for i3. My previous dotfiles can be found [here](https://github.com/sykesgabri/dotfiles).
 
