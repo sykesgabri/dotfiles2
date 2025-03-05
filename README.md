@@ -178,7 +178,7 @@ No syncing, no importing from previous browser, set Floorp to default browser.
 - [Stylus](https://addons.mozilla.org/en-GB/firefox/addon/styl-us/) (json backup of my various installed styles in `scripts` directory)
 - [Wayback Machine](https://addons.mozilla.org/en-GB/firefox/addon/wayback-machine_new)
 - [Turn Off the Lights](https://addons.mozilla.org/en-GB/firefox/addon/turn-off-the-lights/)
-- [Firefox Color](https://addons.mozilla.org/en-GB/firefox/addon/firefox-color) (Used to apply [Catppuccin](https://github.com/catppuccin/firefox) to Firefox)
+- [Firefox Color](https://addons.mozilla.org/en-GB/firefox/addon/firefox-color) (Used to apply [Catppuccin](https://github.com/catppuccin/firefox) to Floorp)
 - [TOSDR](https://addons.mozilla.org/en-GB/firefox/addon/terms-of-service-didnt-read/)
 - [TTV LOL PRO](https://addons.mozilla.org/en-GB/firefox/addon/ttv-lol-pro/)
 - [No Dumb TLDs](https://addons.mozilla.org/en-GB/firefox/addon/no-dumb-tld-s/)
