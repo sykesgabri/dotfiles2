@@ -54,6 +54,11 @@ makepkg -si
 yay -S zscroll-git
 ```
 
+#### BetterControl:
+```
+yay -S better-control-git
+```
+
 #### polybar-spotify:
 ```
 cd ~
