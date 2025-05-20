@@ -155,6 +155,9 @@ bindsym $mod+r mode "resize"
 # Remove window titlebars and set window borders to 3px
 for_window [class="^.*"] border pixel 3
 
+# Remove borders from Audacious because I use the Winamp skin from this tutorial: https://lunduke.substack.com/p/miss-winamp-try-audacious-the-winamp
+for_window [class="Audacious"] border pixel 0
+
 # Change border colours
 # class                 border  backgr. text    indicator child_border
 client.focused          #cba6f7 #cba6f7 #cba6f7 #cba6f7   #cba6f7 
