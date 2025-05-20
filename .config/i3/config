@@ -180,4 +180,3 @@ exec /home/gabri/.screenlayout/./main.sh
 
 exec polybar
 exec nitrogen --restore
-exec flatpak run com.github.wwmm.easyeffects
