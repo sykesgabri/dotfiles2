@@ -75,23 +75,32 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Hermit.zip
 unzip Hermit.zip
 rm -rf Hermit.zip
 cd ..
-sudo mv Hermit/ /usr/share/fonts
+sudo mv Hurmit/ /usr/share/fonts
 ```
+#### Whichever Stream Deck software you prefer:
+```
+# OpenDeck
+flatpak install flathub me.amankhanna.opendeck
 
-#### Streamcontroller:
-```
+# StreamController
 flatpak install flathub com.core447.StreamController
 ```
+NOTE: Install one or the other, not both at once. You don't need either if you don't own an Elgato Stream Deck.
 
 #### Catppuccin Mocha Mauve GTK Theme:
 ```
 mkdir ~/.themes
 cd ~/.themes
 wget https://github.com/catppuccin/gtk/releases/download/v1.0.3/catppuccin-mocha-mauve-standard+default.zip
+wget https://github.com/catppuccin/gtk/releases/download/v0.7.5/Catppuccin-Mocha-Standard-Mauve-Dark.zip
 unzip catppuccin-mocha-mauve-standard+default.zip
+unzip Catppuccin-Mocha-Standard-Mauve-Dark.zip
+mv Catppuccin-Mocha-Standard-Mauve-Dark/gtk-2.0 catppuccin-mocha-mauve-standard+default/
 rm -rf catppuccin-mocha-mauve-standard+default.zip
+rm -rf Catppuccin-Mocha-Standard-Mauve-Dark.zip
+rm -rf Catppuccin-Mocha-Standard-Mauve-Dark/
 ```
-NOTE: Set theme with nwg-look.
+NOTE: Set theme with nwg-look for GTK3/4 and lxappearance for GTK2, the download of two releases and moving of files happens because for whatever reason, the gtk-2.0 folder was removed after release 0.7.5.
 
 #### Catppuccin Mocha Mauve Papirus Folders:
 ```
@@ -113,7 +122,7 @@ NOTE: Set cursor theme with nwg-look.
 
 #### Floorp:
 ```
-yay -S floorp-bin
+flatpak install flathub one.ablaze.floorp
 ```
 
 ## Installation:
@@ -134,7 +143,7 @@ NOTE: If you get a `Stowing . would cause conflicts` error, it is because there 
 
 ## Setting up Floorp the way I like it:
 
-The reason my .mozilla folder is not included in the dots is a combination of just being careful, and it only working some of the time when transferring to new installs. In lieu of that folder, I'll just document how Floorp is set up on all my computers regardless of type or OS. My settings are fairly strict, and I make use of a good number of extensions, you may wish to do stuff differently, this is just how I do it.
+I have not included an unencrypted version of my Floorp profile folder in the dots, I've done this for the sake of being careful. In lieu of that folder, I'll just document how Floorp is set up on all my computers regardless of type or OS. My settings are fairly strict, and I make use of a good number of extensions, you may wish to do stuff differently, this is just how I do it.
 
 NOTE: These screenshots are from Firefox, when I was still using that. I'm on Floorp now, but I'll keep these screenshots here because the settings are 99% the same, with only a handful of extra things added by Floorp.
 
@@ -207,6 +216,8 @@ Some parts of these dotfiles will be very specific to my setup, which is probabl
 
 - The .sh files in .screenlayout/ correspond to my monitor setup. I strongly recommend deleting them and using arandr to create a .sh file for your monitor setup. Ensure that whatever you name it is reflected in the exec command at the bottom of .config/i3/config so that it is automatically executed when you log in.
 
-- You may wish to remove various exec commands from the i3 config. The top one prevents the screen from going to sleep. The rest correspond to various programs, some of which you may not use. Just don't delete the ones for lxsession, picom, the .screenlayout/ script, polybar, and nitrogen.
+- The script in .autostart changes the keyboard layout to UK Mac and forces keycode 49 (the key to the left of 1 on my Keychron K2 HE) to be § #. If this script executes, simply unplugging and replugging your keyboard is enough to reset things back to default. Assuming you don't have a UK Mac layout Keychron K2 HE, you'll want to delete that script and the exec command that triggers it in i3.
+
+- You may wish to remove various exec commands from the end of the i3 config. The top one prevents the screen from going to sleep. The rest correspond to various programs, some of which you may not use. Just don't delete the ones for lxsession, picom, the .screenlayout/ script, polybar, and nitrogen.
 
 This repo was created following this tutorial: https://www.youtube.com/watch?v=y6XCebnB9gs
