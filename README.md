@@ -220,4 +220,8 @@ Some parts of these dotfiles will be very specific to my setup, which is probabl
 
 - You may wish to remove various exec commands from the end of the i3 config. The top one prevents the screen from going to sleep. The rest correspond to various programs, some of which you may not use. Just don't delete the ones for lxsession, picom, the .screenlayout/ script, polybar, and nitrogen.
 
+## If you are me:
+
+Your encrypted Floorp profile is in the scripts folder even though it isn't a script, just to make sure Stow ignores it. Decrypt it with `openssl enc -d -aes-256-cbc -in floorp-profile_2025-07-06.enc -out floorp-profile_2025-07-06.tar.gz`, you'll know the encryption key.
+
 This repo was created following this tutorial: https://www.youtube.com/watch?v=y6XCebnB9gs
