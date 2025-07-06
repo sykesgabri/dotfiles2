@@ -172,6 +172,13 @@ gaps outer 6px
 
 # Autostart shit
 
+# XDG Desktop Portal required for Flatpak applications to open dialogues properly.
+exec --no-startup-id /usr/lib/xdg-desktop-portal -r &
+exec --no-startup-id /usr/lib/xdg-desktop-portal-gtk -r &
+
+# This specific script is meant to ensure that my Keychron K2, which is set to UK MacOS layout due to me regularly using a Mac for working with non-linux software, works as expected on Arch. It also replaces the plusminus symbol with # because for some fucking reason Apple ignores every unique aspect of UK layout in their UK layout, decided § and plusminus were somehow more important than #, and made the actual way to get a # be right-alt+3, this keyboard does not have a right alt. This remapping is done with keycodes, so if you have a UK Mac layout keyboard that isn't a Keychron K2 HE, you'll likely have to use xev to find the keycodes on your own keyboard.
+exec --no-startup-id ~/.autostart/keychron-k2-apple-fixes.sh &
+
 # This specific exec command prevents the screen from automatically going to sleep, you may wish to delete this line, especially if you're using these dots on a laptop.
 exec xset s off && xset -dpms
 
@@ -183,3 +190,6 @@ exec /home/gabri/.screenlayout/./main.sh
 
 exec polybar
 exec nitrogen --restore
+
+# Runs the OpenDeck Flatpak, one of the handful of Stream Deck software packages available on Linux.
+exec flatpak run me.amankhanna.opendeck
