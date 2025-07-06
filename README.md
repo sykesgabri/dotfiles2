@@ -33,10 +33,12 @@ I use these dotfiles on Arch, and as such will be referencing pacman commands, t
 - Flameshot
 - Thunar
 - Flatpak
+- XDG Desktop Portal
+- XDG Desktop Portal GTK
 
 Here's a massive pacman command to install all this stuff:
 ```
-sudo pacman -S --needed git stow wget unzip i3-wm i3lock arandr rofi polybar nitrogen alacritty zsh zsh-syntax-highlighting starship fastfetch noto-fonts-cjk lxsession nwg-look papirus-icon-theme picom playerctl python-distutils-extra neovim flameshot thunar flatpak
+sudo pacman -S --needed git stow wget unzip i3-wm i3lock arandr rofi polybar nitrogen alacritty zsh zsh-syntax-highlighting starship fastfetch noto-fonts-cjk lxsession nwg-look papirus-icon-theme picom playerctl python-distutils-extra neovim flameshot thunar flatpak xdg-desktop-portal xdg-desktop-portal-gtk
 ```
 
 ### Stuff you can't get from pacman:
