@@ -101,6 +101,7 @@ mv Catppuccin-Mocha-Standard-Mauve-Dark/gtk-2.0 catppuccin-mocha-mauve-standard+
 rm -rf catppuccin-mocha-mauve-standard+default.zip
 rm -rf Catppuccin-Mocha-Standard-Mauve-Dark.zip
 rm -rf Catppuccin-Mocha-Standard-Mauve-Dark/
+rm -rf *-hdpi *-xhdpi
 ```
 NOTE: Set theme with nwg-look for GTK3/4 and lxappearance for GTK2, the download of two releases and moving of files happens because for whatever reason, the gtk-2.0 folder was removed after release 0.7.5.
 
