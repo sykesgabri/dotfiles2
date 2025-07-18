@@ -1,9 +1,9 @@
 format = """
-[](#f38ba8)\
+[](#94e2d5)\
 $username\
-[](fg:#f38ba8 bg:#cdd6f4)\
+[](fg:#94e2d5 bg:#1e1e2e)\
 $directory\
-[ ](fg:#cdd6f4)\
+[ ](fg:#1e1e2e)\
 """
 
 # Disable the blank line at the start of the prompt
@@ -11,12 +11,12 @@ add_newline = false
 
 [username]
 show_always = true
-style_user = "fg:#181825 bg:#f38ba8"
+style_user = "fg:#181825 bg:#94e2d5"
 style_root = "bg:#fe640b"
 format = '[$user ]($style)'
 
 [directory]
-style = "fg:#11111b bg:#cdd6f4"
+style = "fg:#cdd6f4 bg:#1e1e2e"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
