@@ -10,4 +10,4 @@ flatpak update
 
 cd ~/.gitclones/linux-tkg
 git pull
-makepkg -si
+makepkg -sif
