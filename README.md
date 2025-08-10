@@ -201,6 +201,7 @@ No syncing, no importing from previous browser, set Floorp to default browser.
 - [No Dumb TLDs](https://addons.mozilla.org/en-GB/firefox/addon/no-dumb-tld-s/)
 - [Bitwarden](https://addons.mozilla.org/en-GB/firefox/addon/bitwarden-password-manager/) (Because I use [Vaultwarden](https://github.com/dani-garcia/vaultwarden) as my password manager)
 - [Indie Wiki Buddy](https://addons.mozilla.org/en-GB/firefox/addon/indie-wiki-buddy/)
+- [Consen-O-Matic](https://addons.mozilla.org/en-GB/firefox/addon/consent-o-matic/)
 
 Userscripts:
 - [YouTube Shorts Redirect](https://greasyfork.org/en/scripts/439993-youtube-shorts-redirect)
